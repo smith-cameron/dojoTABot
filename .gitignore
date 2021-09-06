@@ -120,6 +120,7 @@ ipython_config.py
 .python-version
 
 # pipenv
+Pipfile
 Pipfile.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
