@@ -28,22 +28,18 @@ async def on_ready():
         await java_pt.send("@stack-java-PT ☕ Hello :java: ninjas! I'll be here until 5PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
         await web_fun_pt.send("@stack-web-fund-PT 🧱 Hello ninjas! I'll be here until 5PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
         await projAlgos_pt.send("@stack-project-algos-PT 📓 Hello ninjas! I'll be here until 5PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
-    if today.isoweekday() == 2:
-        print("Presence posted for Tuesday")
+    if today.isoweekday() == 2 or today.isoweekday() == 3:
+        print("Presence posted for Tuesday/Wednesday")
         await python_pt.send("@stack-python-PT 📘 Hello :python: ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
         await java_pt.send("@stack-java-PT ☕ Hello :java: ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
         await web_fun_pt.send("@stack-web-fund-PT 🧱 Hello ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
         await projAlgos_pt.send("@stack-project-algos-PT 📓 Hello ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
-        print("Office hours posted for Reena's cohort")
-        await cohort_java_Reena.send("@cohort-ReenaD 🏫 Office hour starting at 4 PST. Bring homework for peer code review, questions, errors and anything you've got going on you may need help with or need eyes for :java:")
-    if today.isoweekday() == 3:
-        print("Presence posted for Wednesday")
-        await python_pt.send("@stack-python-PT 📘 Hello :python: ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
-        await java_pt.send("@stack-java-PT ☕ Hello :java: ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
-        await web_fun_pt.send("@stack-web-fund-PT 🧱 Hello ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
-        await projAlgos_pt.send("@stack-project-algos-PT 📓 Hello ninjas! I'll be here until 8PM PST. If you have any questions or need extra :eyes: please feel free to reach out.")
-        print("Office hours posted for Matt's cohort")
-        await cohort_java_Matt.send("@cohort-MattS-2 🏫 Office hour starting at 4 PST. Bring homework for peer code review, questions, errors and anything you've got going on you may need help with or need eyes for :java:")
+        if today.isoweekday() == 2:
+            print("Office hours posted for Reena's cohort")
+            await cohort_java_Reena.send("@cohort-ReenaD 🏫 Office hour starting at 4 PST. Bring homework for peer code review, questions, errors and anything you've got going on you may need help with or need eyes for :java:")
+        elif today.isoweekday() == 3:
+            print("Office hours posted for Matt's cohort")
+            await cohort_java_Matt.send("@cohort-MattS-2 🏫 Office hour starting at 4 PST. Bring homework for peer code review, questions, errors and anything you've got going on you may need help with or need eyes for :java:")
 
     server_count = 0
     for server in bot.guilds:
