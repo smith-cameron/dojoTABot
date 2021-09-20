@@ -9,12 +9,12 @@ today = datetime.now()
 
 @bot.event
 async def on_ready():
-    python_pt = bot.get_channel(835650097256726598)
-    java_pt = bot.get_channel(842186514686410762)
-    web_fun_pt = bot.get_channel(830188343714643998)
-    projAlgos_pt = bot.get_channel(832364162406547456)
-    cohort_java_Matt = bot.get_channel(846523273244049418)
-    cohort_java_Reena = bot.get_channel(870776422376042506)
+    python_pt = bot.get_channel(884454021576949780)
+    java_pt = bot.get_channel(884454120092753951)
+    web_fun_pt = bot.get_channel(884459590429843476)
+    projAlgos_pt = bot.get_channel(884459879232860233)
+    cohort_java_Matt = bot.get_channel(884446303491338324)
+    cohort_java_Reena = bot.get_channel(884446303491338324)
 
     if today.isoweekday() == 0:
         print("Presence posted for Sunday")
@@ -49,13 +49,13 @@ async def on_ready():
 
 @bot.event
 async def close():
-    python_pt = bot.get_channel()
+    python_pt = bot.get_channel(884454021576949780)
     await python_pt.send("@stack-python-PT 📘 If any of us (TA's) helped you today, please give us some feedback on how we did! This form gives you the ability to voice how we are doing. The feedback doesn't go directly to us, so feel free to speak your mind and help us improve. https://operations462398.typeform.com/to/rX5h1pbL#ta_name=cameron_s")
-    java_pt = bot.get_channel()
+    java_pt = bot.get_channel(884454120092753951)
     await java_pt.send("@stack-java-PT ☕ If any of us (TA's) helped you today, please give us some feedback on how we did! This form gives you the ability to voice how we are doing. The feedback doesn't go directly to us, so feel free to speak your mind and help us improve. https://operations462398.typeform.com/to/rX5h1pbL#ta_name=cameron_s")
-    web_fun_pt = bot.get_channel()
+    web_fun_pt = bot.get_channel(884459590429843476)
     await web_fun_pt.send("@stack-web-fund-PT 🧱 If any of us (TA's) helped you today, please give us some feedback on how we did! This form gives you the ability to voice how we are doing. The feedback doesn't go directly to us, so feel free to speak your mind and help us improve. https://operations462398.typeform.com/to/rX5h1pbL#ta_name=cameron_s")
-    projAlgos_pt = bot.get_channel()
+    projAlgos_pt = bot.get_channel(884459879232860233)
     await projAlgos_pt.send("@stack-project-algos-PT 📓 If any of us (TA's) helped you today, please give us some feedback on how we did! This form gives you the ability to voice how we are doing. The feedback doesn't go directly to us, so feel free to speak your mind and help us improve. https://operations462398.typeform.com/to/rX5h1pbL#ta_name=cameron_s")
 
 bot.run(DISCORD_TOKEN)
