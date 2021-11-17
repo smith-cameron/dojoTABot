@@ -1,5 +1,7 @@
 # dojoTABot
 Discord bot for posting messages to a discord server based on what day of the week it is.
+pip install discord.py
+pip install python-dotenv
 
                         ------------ References ------------
 https://betterprogramming.pub/coding-a-discord-bot-with-python-64da9d6cade7
